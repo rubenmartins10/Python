@@ -30,6 +30,7 @@ def view_settings(settings_dict):
     if not settings_dict:
         return 'No settings available.'
     result = 'Current User Settings:'
+    
     for key, value in settings_dict.items():
         result += f"\n{key.capitalize()}: {value}"
     return result + "\n"
